@@ -1,7 +1,7 @@
 public class Main{
     public static void main(String[] args) {
         String nama = "Muhammad Fikry Efendi";
-        final long NIM = 2407112294L;
+        final long NIM = 2407112294L; //variabel ini menggunakan final untuk menandakan konstanta
         double[] ip = {3.86, 3.77};
         String alamat = "Jalan Naga Sakti Perum Griya Kenari Indah Blok H76";
         int umur = 19;
