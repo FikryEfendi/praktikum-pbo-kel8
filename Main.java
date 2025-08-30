@@ -1,20 +1,23 @@
-public class Main{
-    public static void main(String[] args) {
-        String nama = "Muhammad Fikry Efendi";
-        final long NIM = 2407112294L;
-        double[] ip = {3.86, 3.77};
-        String alamat = "Jalan Naga Sakti Perum Griya Kenari Indah Blok H76";
-        int umur = 19;
-        char golonganDarah = 'B';
-        byte ipByte = (byte) ip[0];
+public class Main
+{
+  public static void main(String[] args)
+  {
+    System.out.println("Hallo Saya Mahasiswa");
+    String nama = "Aflah sholeh Wahib Utomo";
+    final long Nim = 2407125919L;
+    double []ip={3.55, 3.25};
+    String alamat = "Jalan Swakarya Gang Abadi 2";
+    int umur = 19;
+    char golongan_darah = 'A';
+    byte ipByte = 3;
 
-        System.out.println("Halo... Nama Saya "+ nama);
-        System.out.println("NIM saya yaitu "+ NIM);
-        System.out.println("Jika kamu ingin mengunjungi saya, bisa langsung kerumah saya di "+ alamat);
-        System.out.println("Saat ini saya berusia "+ umur);
-        System.out.println("Golongan darah saya yaitu "+ golonganDarah);
-        System.out.println("IP Semester 1 saya "+ ip[0]);
-        System.out.println("IP Semester 2 saya "+ ip[1]);
-        System.out.println("IP Semester 1 dalam Byte "+ ipByte);
-    }
+    System.out.println("nama saya " + nama);
+    System.out.println("Nim saya adalah " +Nim);
+    System.out.println("Ip saya di Semester 1 dan 2 adalah " +ip[0]+" "+ip[1]);
+    System.out.println("saat ini tinggal di " +alamat);
+    System.out.println("umur saya saat ini  "+umur);
+    System.out.println("golongan darah saya adalah " +golongan_darah);
+    System.out.println("ip Semester 2 dalam byte " + ipByte);
+
+  }
 }
