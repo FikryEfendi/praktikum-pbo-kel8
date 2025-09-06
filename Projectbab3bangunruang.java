@@ -14,6 +14,6 @@ public class Projectbab3bangunruang {
         
         int volumeKubus = sisiKubus * sisiKubus * sisiKubus;
         
-        System.out.println("Volume kubus = "+ volumeKubus +" cm");
+        System.out.println("Volume kubus "+ namaKubus +"= "+ volumeKubus +" cm");
     }
 }
