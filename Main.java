@@ -7,6 +7,7 @@ public class Main{
         int umur = 19;
         char golonganDarah = 'O';
         byte[] ipByte = { (byte) ip[0], (byte) ip[1] };
+        boolean betul = true ;
 
 
         System.out.println("\n===========================================================================");
@@ -19,6 +20,7 @@ public class Main{
         System.out.println(" dan IP Semester 2 saya "+ ip[1]);
         System.out.print("IP Semester 1 dalam Byte "+ ipByte[0]);
         System.out.println(" dan IP Semester 2 dalam Byte "+ ipByte[1]);
+        System.out.println("Now I am a student, and that is "+ betul);
         System.out.println("=============================================================================");
 
     }
