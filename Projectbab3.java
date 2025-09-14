@@ -1,4 +1,3 @@
-package com.mycompany.projectbab3hasilpraktikum;
 import java.util.Scanner;
 
 public class Projectbab3 {
