@@ -1,4 +1,4 @@
-package com.mycompany.projectbab4hasilpraktikum;
+
 import java.util.Scanner;
 
 public class Projectbab4hasilpraktikum {
