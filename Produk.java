@@ -2,52 +2,29 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.praktikum6;
+package com.mycompany.praktikum7;
 
 /**
  *
  * @author fikry
  */
-public class Produk {
-    public String nama;
-    private double harga;
-    protected int stok;
-    private String namaSuplier = "fikry";
+public class Produk implements HargaAkhir{
+    protected String nama;
+    protected int harga;
     
-    static int jumlahProduk = 0;
-    
-    public static void tampilkanJumlahProduk(){
-        System.out.println("Jumlah produk adalah : "+ jumlahProduk);
-    }
-    public Produk(String nama, double harga, int stok){
+    public Produk(String nama, int harga){
         this.nama = nama;
         this.harga = harga;
-        this.stok = stok;
-        jumlahProduk ++;
     }
-    public double getHarga(){
-        return harga;
+    public void tampilInfo(){
+        System.out.println("Nama barang: "+ nama);
+        System.out.println("Harga barang: "+ harga);
     }
-    public void setHarga(double hargaBaru){
-        if(hargaBaru > 0){
-            this.harga = hargaBaru;
-            System.out.println("Harga baru adalah : "+ this.harga);
-        }
-        else if (hargaBaru == 0){
-            this.harga = hargaBaru;
-            System.out.println("Barang Gratis!!!");
-        }
-        else{
-            System.out.println("Harga tidak bisa negatif");
-        }
+    public double hitungPajak(){
+        return harga * 0.05;
     }
-    
-    public void tampilkanInfo(){
-        System.out.println("nama : "+ nama);
-        System.out.println("harga : "+ harga);
-        System.out.println("stok : "+ stok);
-    }
-    public void tampilNamaSuplier(){
-        System.out.println("Nama Suplier : "+ namaSuplier);
+    @Override
+    public double hitungHarga(){
+        return harga * 1.05;
     }
 }
